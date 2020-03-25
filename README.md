@@ -16,11 +16,20 @@ These are the questions we are trying to answer:
 - What is the distribution of color of squirrels across Central Park?
 
 ### Links to Our Data Set(s)
-Data set can be exported as a CSV file from https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw. It has over 3000 records in it.
+Data set can be exported as a CSV file from the following:
+- https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw
+- https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Hectare-Data/ej9h-v6g2
+
+The datasets have over 3000 records in them.
+The following data exists for each record: X, Y, Unique Squirrel ID, Hectare, Shift, Date, Hectare Squirrel Number, Age, Primary Fur Color, Highlight Fur Color, Combination of Primary and Highlight Color, Color notes, Location, Above Ground Sighter Measurement, Specific Location, Running, Chasing, Climbing, Eating, Foraging, Other Activities, Kuks, Quaas, Moans, Tail flags, Tail twitches, Approaches, Indifferent, Runs from, Other Interactions, Lat/Long, Zip Codes, Community Districts, Borough Boundaries, City Council Districts, Police Precincts
 
 ### Inspiring Visualizations
+![Dynamic Map](https://www.igismap.com/wp-content/uploads/2017/12/Create-beautiful-dynamic-Legend-map.png)
+
+
+![Hexbin Map](junk)
 
 ### Our Final Design
 
 ### GitHub Repository
-This project will be housed in the repository: http://github.com/nmajeski/anne-aom-max-nick-project-2
+This project will be housed in the repository: https://github.com/nmajeski/anne-sineekarn-max-jimmy-nick-project-2
