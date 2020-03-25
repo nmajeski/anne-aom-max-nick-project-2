@@ -5,9 +5,9 @@
 
 
 ### Chosen Topic and Rationale
-We decided to analyze the attributes, behaviors, and locations of squirrels in New York City's Central Park during for two weeks in October 2019, in preparation for winter hibernation.
+We decided to analyze the attributes, behaviors, and locations of squirrels in New York City's Central Park during two weeks in October 2019, in preparation for winter hibernation.
 
-In this project, we will use Python Flask to run the HTTP server. We will use HTML/CSS to structure and format the UI. We will use JavaScript (Plotly and Leaflet) in order to parse and show the data in various visualizations including maps and graphs. We will store the data in a SQL database. The data will come from a CSV file.
+In this project, we will use Python Flask to run the HTTP server. We will use HTML/CSS to structure and format the UI. We will use JavaScript (Plotly and Leaflet) in order to parse the data and to show it in various visualizations including maps and graphs. We will store the data in a SQL database. The data will come from an exported CSV file.
 
 These are the questions we are trying to answer:
 - Do we tend to see more squirrels during the day or night time?
