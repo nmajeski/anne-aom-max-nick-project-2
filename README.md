@@ -27,7 +27,7 @@ The following data exists for each record: X, Y, Unique Squirrel ID, Hectare, Sh
 ![Dynamic Map](https://www.igismap.com/wp-content/uploads/2017/12/Create-beautiful-dynamic-Legend-map.png)
 
 
-![Hexbin Map](junk)
+![Hexbin Map](https://github.com/nmajeski/anne-sineekarn-max-jimmy-nick-project-2/blob/master/images/HexbinMap.png)
 
 ### Our Final Design
 
