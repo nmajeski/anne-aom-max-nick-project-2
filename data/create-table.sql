@@ -35,7 +35,7 @@ CREATE TABLE squirrel_census_data (
 	community_districts INT,
 	borough_boundaries INT,
 	city_council_districts INT,
-	police_precints INT
+	police_precincts INT
 );
 
 -- Imported the CSV file. No INSERT SQL necessary.

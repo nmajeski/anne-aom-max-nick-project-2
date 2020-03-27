@@ -40,7 +40,7 @@ def welcome():
     """List all available api routes."""
     return (
         f"Available Routes:<br/>"
-        f"/api/squirrel_census_data"
+        f"/api/squirrel-census-data"
     )
 
 
@@ -65,7 +65,41 @@ def make_dict(results):
         results_arr.append({
             'id': row.id, 
             'x': float(row.x),
-            'y': float(row.y)
+            'y': float(row.y),
+            'unique_squirrel_id': row.unique_squirrel_id,
+            'hectare': row.hectare,
+            'shift': row.shift,
+            'date': row.date,
+            'hectare_squirrel_number': row.hectare_squirrel_number,
+            'age': row.age,
+            'primary_fur_color': row.primary_fur_color,
+            'highlight_fur_color': row.highlight_fur_color,
+            'combination_of_primary_and_highlight_color': row.combination_of_primary_and_highlight_color,
+            'color_notes': row.color_notes,
+            'location': row.location,
+            'above_ground_sighter_measurement': row.above_ground_sighter_measurement,
+            'specific_location': row.specific_location,
+            'running': row.running,
+            'chasing': row.chasing,
+            'climbing': row.climbing,
+            'eating': row.eating,
+            'foraging': row.foraging,
+            'other_activities': row.other_activities,
+            'kuks': row.kuks,
+            'quaas': row.quaas,
+            'moans': row.moans,
+            'tail_flags': row.tail_flags,
+            'tail_twitches': row.tail_twitches,
+            'approaches': row.approaches,
+            'indifferent': row.indifferent,
+            'runs_from': row.runs_from,
+            'other_interactions': row.other_interactions,
+            'lat_long': row.lat_long,
+            'zip_codes': row.zip_codes,
+            'community_districts': row.community_districts,
+            'borough_boundaries': row.borough_boundaries,
+            'city_council_districts': row.city_council_districts,
+            'police_precincts': row.police_precincts
         })
     return results_arr
 
