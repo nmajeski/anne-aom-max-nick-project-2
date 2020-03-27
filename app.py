@@ -24,6 +24,7 @@ print(Base.classes.keys())
 
 # # Save reference to the table
 SquirrelCensusData = Base.classes.squirrel_census_data
+SquirrelHectareData = Base.classes.squirrel_hectare_data
 
 #################################################
 # Flask Setup
@@ -40,7 +41,8 @@ def welcome():
     """List all available api routes."""
     return (
         f"Available Routes:<br/>"
-        f"/api/squirrel-census-data"
+        f"/api/squirrel-census-data<br/>"
+        f"/api/squirrel-hectare-data"
     )
 
 
@@ -53,13 +55,28 @@ def squirrel_census_data():
     # Query all passengers
     results = session.query(SquirrelCensusData).all()
 
-    results_arr = make_dict(results)
+    results_arr = make_census_dict(results)
 
     session.close()
 
     return jsonify(results_arr)
 
-def make_dict(results):
+@app.route("/api/squirrel-hectare-data")
+def squirrel_hectare_data():
+    # Create our session (link) from Python to the DB
+    session = Session(engine)
+
+    """Return a list of all squirrel names"""
+    # Query all passengers
+    results = session.query(SquirrelHectareData).all()
+
+    results_arr = make_hectare_dict(results)
+
+    session.close()
+
+    return jsonify(results_arr)
+
+def make_census_dict(results):
     results_arr = []
     for row in results:
         results_arr.append({
@@ -100,6 +117,19 @@ def make_dict(results):
             'borough_boundaries': row.borough_boundaries,
             'city_council_districts': row.city_council_districts,
             'police_precincts': row.police_precincts
+        })
+    return results_arr
+
+def make_hectare_dict(results):
+    results_arr = []
+    for row in results:
+        results_arr.append({
+            'the_geom': row.the_geom,
+            'id': row.id, 
+            'x_min': float(row.x_min),
+            'x_max': float(row.x_max),
+            'y_min': float(row.y_min),
+            'y_max': float(row.y_max)
         })
     return results_arr
 

@@ -38,7 +38,19 @@ CREATE TABLE squirrel_census_data (
 	police_precincts INT
 );
 
--- Imported the CSV file. No INSERT SQL necessary.
+CREATE TABLE squirrel_hectare_data (
+	the_geom TEXT,
+	id INT NOT NULL PRIMARY KEY,
+	x_min NUMERIC,
+	x_max NUMERIC,
+	y_min NUMERIC,
+	y_max NUMERIC
+);
+
+-- Imported the CSV files. No INSERT SQL necessary.
 
 SELECT *
 FROM squirrel_census_data;
+
+SELECT *
+FROM squirrel_hectare_data;
